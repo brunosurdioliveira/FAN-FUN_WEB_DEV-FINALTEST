@@ -1,0 +1,111 @@
+<!--
+Name: Bruno Surdi Oliveira
+Date: April 23, 2020
+Purpose: Final Test Part B
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Final Test Part B</title>
+</head>
+<link rel="stylesheet" href="Bruno_FinalTest.css">
+
+<body onload="initialize();">
+	<h1>Customer Data</h1>
+
+	<!-- Registration Form -->
+	<form>
+		<fieldset>
+			<legend>New Customer Form</legend>
+			First name:
+			<input type="text" id="tbFirstName">
+			<br><br>
+			Last name:
+			<input type="text" id="tbLastName">
+			<br><br>
+			City:
+			<input type="text" id="tbCity">
+			Province:
+			<select id="ddProvince" class="selection">
+				<option>ON</option>
+				<option>BC</option>
+				<option>AB</option>
+				<option>SK</option>
+				<option>MB</option>
+				<option>QC</option>
+				<option>NB</option>
+				<option>NS</option>
+				<option>PE</option>
+				<option>NL</option>
+				<option>YT</option>
+				<option>NT</option>
+				<option>NU</option>
+			</select>
+			<br><br>
+			Birth Date:
+			<input type="text" id="tbBirthDate" placeholder="Month Day, Year" />
+			Gender:
+			<select id="ddGender" class="selection">
+				<option>Male</option>
+				<option>Female</option>
+			</select>
+			<br /><br />
+			<!-- Use an event listener to call this function for the button “Submit” -->
+			<input type="button" id="btnSubmit" value="Submit" class="button" onclick="registerCustomer()">
+		</fieldset>
+	</form>
+	<br><br>
+
+	<!-- Customer List -->
+	<div>
+		<fieldset>
+			<legend>Customers</legend>
+			<div id="divCustomerOutput" class="outputStyle">
+				[Customer List Here]
+			</div>
+		</fieldset>
+	</div>
+	<br><br>
+
+	<!-- Query Form -->
+	<div>
+		<fieldset>
+			<legend>Query</legend>
+			Gender:
+			<select id="ddQueryGender" class="selection">
+				<option>Male</option>
+				<option>Female</option>
+			</select>
+			Province:
+			<select id="ddQueryProvince" class="selection">
+				<option>ON</option>
+				<option>BC</option>
+				<option>AB</option>
+				<option>SK</option>
+				<option>MB</option>
+				<option>QC</option>
+				<option>NB</option>
+				<option>NS</option>
+				<option>PE</option>
+				<option>NL</option>
+				<option>YT</option>
+				<option>NT</option>
+				<option>NU</option>
+			</select>
+			Age:
+			<input type="number" id="tbQueryAge" value=18 />
+			&nbsp;
+			<!-- Use an event listener to call this function (queryData) for the button “Query”. -->
+			<input type="button" id="btnQuery" value="Query" class="button" onclick="queryData()">
+			<hr>
+			<div id="divQueryOutput" class="outputStyle">[Query Output Here]</div>
+		</fieldset>
+	</div>
+
+	<!-- Javascript -->
+	<script src="Bruno_FinalTest.js">
+	</script>
+</body>
+
+</html>

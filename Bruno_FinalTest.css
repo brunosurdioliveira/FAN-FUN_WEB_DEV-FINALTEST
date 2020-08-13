@@ -1,0 +1,49 @@
+h1 {
+    text-align: left;
+}
+
+body {
+    font-family: Verdana;
+    font-size: 100%;
+    background-color: #d8e7ff;
+}
+
+input[type=number] {
+    width: 40px;
+}
+
+.selection {
+    font-family: Verdana;
+    font-size: 11pt;
+    border: 1px solid #07A2FE;
+    color: black;
+    background-color: aliceblue;
+    height: 25px;
+    text-align: left;
+}
+
+.button {
+    font-family: Verdana;
+    background-color: aliceblue;
+    font-size: 12pt;
+    padding: 5px;
+}
+
+fieldset {
+    padding: 20px;
+}
+
+legend {
+    border: 1px solid black;
+    color: black;
+    font-size: 90%;
+    text-align: left;
+}
+
+.outputStyle {
+    color: #523620;
+    text-align: center;
+    margin: 20px 10px;
+    width: 550px;
+    height: auto
+}
